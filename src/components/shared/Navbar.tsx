@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { cn } from '@/lib/utils';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
@@ -30,9 +31,18 @@ export const Navbar = () => {
       scrolled ? 'bg-dark-950/80 backdrop-blur-md border-border py-3' : 'bg-transparent border-transparent py-5'
     )}>
       <div className="container mx-auto px-4 flex items-center justify-between">
-        <Link href="/" className="text-xl font-bold tracking-tighter flex items-center gap-2">
-          <span className="text-foreground">LINHA</span>
-          <span className="text-brand-blue">ZERO</span>
+        <Link href="/" className="text-xl font-bold tracking-tighter flex items-center gap-3">
+          <Image
+            src="/logo.png"
+            alt="Linha Zero Logo"
+            width={32}
+            height={32}
+            className="w-8 h-8 object-contain"
+          />
+          <div className="flex gap-1">
+            <span className="text-foreground">LINHA</span>
+            <span className="text-brand-blue">ZERO</span>
+          </div>
         </Link>
 
         {/* Desktop Nav */}

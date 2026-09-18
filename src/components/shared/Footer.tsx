@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { cn } from '@/lib/utils';
 
 const FOOTER_LINKS = [
@@ -27,9 +28,18 @@ export const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <div className="col-span-1 md:col-span-2">
-            <Link href="/" className="text-2xl font-bold tracking-tighter flex items-center gap-2 mb-4">
-              <span className="text-foreground">LINHA</span>
-              <span className="text-brand-blue">ZERO</span>
+            <Link href="/" className="text-2xl font-bold tracking-tighter flex items-center gap-3 mb-4">
+              <Image
+                src="/logo.png"
+                alt="Linha Zero Logo"
+                width={40}
+                height={40}
+                className="w-10 h-10 object-contain"
+              />
+              <div className="flex gap-1">
+                <span className="text-foreground">LINHA</span>
+                <span className="text-brand-blue">ZERO</span>
+              </div>
             </Link>
             <p className="text-muted max-w-sm mb-6">
               Programação do zero, sem complicação. <br />
