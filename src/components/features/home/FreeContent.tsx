@@ -1,7 +1,7 @@
 import React from 'react';
 import { SectionHeader } from '@/components/shared/SectionHeader';
 import { Button } from '@/components/ui/Button';
-import { Instagram } from 'lucide-react';
+import { Share2 } from 'lucide-react';
 
 export const FreeContent = () => {
   return (
@@ -24,7 +24,7 @@ export const FreeContent = () => {
 
           <div className="bg-dark-900 border border-border p-8 rounded-2xl inline-block w-full max-w-md">
             <div className="flex items-center justify-center gap-3 mb-6">
-              <Instagram className="text-brand-blue" size={32} />
+              <Share2 className="text-brand-blue" size={32} />
               <span className="text-xl font-bold">@linhazero.dev</span>
             </div>
             <a href="https://www.instagram.com/linhazero.dev/" target="_blank" rel="noopener noreferrer">
