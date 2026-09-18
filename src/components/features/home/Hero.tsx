@@ -33,8 +33,8 @@ export const Hero = () => {
           </h1>
 
           <p className="text-muted text-lg md:text-xl max-w-xl mb-10 leading-relaxed">
-            Conteúdo, projetos e materiais para quem quer começar a programar do zero.
-            Aprenda de forma progressiva: do conceito ao projeto real.
+            Conteúdo, projetos e materiais para quem quer <span className="text-brand-blue font-semibold">começar a programar do zero</span>.
+            Aprenda de forma progressiva: do conceito ao <span className="text-brand-blue font-semibold">projeto real</span>.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
